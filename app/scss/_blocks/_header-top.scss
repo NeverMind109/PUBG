@@ -29,7 +29,7 @@
             content: url('../images/flag.jpg');
             position: absolute;
             top: -4px;
-            left: 0;
+            left: 16px;
         }
         &::after {
             content: url('../images/caret-down.svg');
@@ -56,6 +56,7 @@
     &__list-link {
         position: relative;
         font-weight: bold;
+        text-transform: uppercase;
         &::after {
             content: '';
             display: none;

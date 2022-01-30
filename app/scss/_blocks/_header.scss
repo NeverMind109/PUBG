@@ -1,6 +1,9 @@
 .header {
+    position: relative;
     font-size: 17px;
     line-height: 21px;
     color: #fff;
-    background: linear-gradient(113.28deg, #1A47EA 3.44%, #82E9FF 96.25%);
+    background: url('../../images/header-bg.svg') no-repeat;
+    background-position: top left -1px;
+    background-size: cover;
 }
