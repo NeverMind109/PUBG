@@ -1,0 +1,190 @@
+.functions {
+    padding-top: 33px;
+    background-color: #F5F9FF;
+    &__wrapper {
+        display: flex;
+    }
+    &__navigation {
+        margin: 0 90px 0 28px;
+        max-width: 567px;
+    }
+    &__tabs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 41px;
+    }
+    &__tab-icon {
+        fill: #aaa;
+        margin-right: 16px;
+    }
+    &__tab-ios {
+        padding-top: 5px;
+    }
+    &__tab {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        font-weight: bold;
+        color: #AAAAAA;
+        height: 73px;
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
+            color: #FFFFFF;
+            .functions__tab-icon {
+                fill: #FFFFFF;
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+    }
+    &__slider-tab1 {
+        position: relative;
+        max-width: 100%;
+        max-height: 620px;
+    }
+    &__slider-item {
+        max-width: 100%;
+    }
+    &__slider-image {
+        object-fit: cover;
+        width: 300px;
+        height: 583px;
+    }
+    &__info {
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 25px;
+        &::before {
+            content: url('../../images/titles-decoration.svg');
+            position: absolute;
+            top: -21px;
+            left: -15px;
+        }
+        &::after {
+            content: url('../../images/titles-decoration.svg');
+            position: absolute;
+            bottom: -21px;
+            right: -26px;
+        }
+    }
+    &__text {
+        width: 495px;
+        text-align: center;
+        color: #828282;
+        margin-bottom: 60px;
+    }
+    &__list {
+        margin-bottom: 20px;
+    }
+    &__item {
+        position: relative;
+        text-align: justify;
+        color: #2E3A59;
+        margin-bottom: 50px;
+        padding-left: 23px;
+        &::before {
+            content: url('../../images/list-point.svg');
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+    }
+    &__item-bold {
+        font-weight: bold;
+    }
+    &__recommendation {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.04);
+        border-radius: 5px;
+        text-align: center;
+        padding: 33px 52px 32px 77px;
+        color: #828282;
+        margin-bottom: 57px;
+        &::before {
+            content: url('../../images/warning-icon.svg');
+            position: absolute;
+            left: 26px;
+            top: 30px;
+        }
+    }
+    &__buttons {
+        margin-bottom: 50px;
+    }
+    &__buy {
+        padding: 28px 96px 28px 34px;
+        margin-right: 23px;
+    }
+    &__watch {
+        position: relative;
+        padding: 28px 80px 28px 28px;
+        background: #FF3B3B;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        cursor: pointer;
+        &::after {
+            content: url('../../images/play-icon.svg');
+            position: absolute;
+            top: 22px;
+            right: 23px;
+        }
+        &:hover {
+            box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+.tab-windows {
+    padding: 0 33px 0 33px;
+}
+.tab-android {
+    padding: 0 27px 0 27px;
+}
+.tab-ios {
+    padding: 0 28px 0 28px;
+}
+.functions__tab + .functions__tab {
+    margin-left: 15px;
+}
+.tabs-buttons {
+    position: absolute;
+    bottom: 0;
+    width: 61px;
+    height: 32px;
+    border: none;
+    fill: #E2E2E2;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 99;
+}
+.tabs-prev {
+    left: 20%;
+    &:hover {
+        fill: url('#linear-gradient');
+    }
+}
+.tabs-next {
+    right: 20%;
+    transform: rotate(180deg);
+    &:hover {
+        fill: url('#linear-gradient');
+    }
+}

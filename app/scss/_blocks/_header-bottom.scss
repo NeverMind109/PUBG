@@ -46,34 +46,16 @@
         line-height: 22px;
         margin: 0 0 45px;
     }
-
     &__buttons {
         margin: 0 0 14px;
     }
     &__buy {
-        position: relative;
         padding: 28px 124px 28px 48px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: #fff;
-        background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
-        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
-        border-radius: 5px;
-        border: none;
         margin-right: 34px;
-        cursor: pointer;
-        &::after {
-            content: url('../images/buy-arrow.svg');
-            position: absolute;
-            right: 34px;
-            top: 24px;
-        }
-        &:hover {
-            box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.5);
-        }
     }
     &__watch {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
