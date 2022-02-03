@@ -1,0 +1,138 @@
+.prices {
+    margin-top: 108px;
+    &__title-wrapper {
+        display: block;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__title {
+        display: inline-block;
+        position: relative;
+        &::before {
+            content: url('../../images/titles-decoration.svg');
+            position: absolute;
+            top: -18px;
+            left: -30px;
+            width: 40px;
+            height: 8px;
+        }
+        &::after {
+            content: url('../../images/titles-decoration.svg');
+            position: absolute;
+            bottom: 24px;
+            right: -30px;
+            width: 40px;
+            height: 8px;
+        }
+    }
+    &__tabs {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__content {
+        display: none;
+        align-items: flex-start;
+        &--active {
+            display: flex;
+        }
+    }
+    &__rate {
+        width: 416px;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+        border-radius: 5px 55px;
+    }
+    &__rate-title {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        color: #FFFFFF;
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+        border-radius: 5px 55px 0px;
+        padding: 23px 0 22px;
+    }
+    &__rate-common {
+        background: linear-gradient(103.24deg, #05FFFF -7.39%, #0AA6FE 85.9%);     
+    }
+    &__rate-standart {
+        background: linear-gradient(89.46deg, #DDA6FF -5.85%, #D828F4 106.28%);
+    }
+    &__rate-pro {
+        background: linear-gradient(98.51deg, #FF9898 14.64%, #FF1F00 102.27%);
+    }
+    &__rate-subtitle {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #2E3A59;
+        margin: 36px 0 34px;
+    }
+    &__rate-list {
+        text-align: left;
+        padding-left: 93px;
+        margin-bottom: 26px;
+    }
+    &__rate-item {
+        position: relative;
+        color: #2E3A59;
+    }
+    &__rate-included {
+        &::before {
+            content: url('../../images/yes-icon.svg');
+            width: 23px;
+            height: 18px;
+            position: absolute;
+            left: -35px;
+        }
+    }
+    &__rate-excluded {
+        &::before {
+            content: url('../../images/no-icon.svg');
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            left: -34px;
+        }
+    }
+    &__rate-price {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 55px;
+        color: #2E3A59;
+        margin-bottom: 21px;
+        sup {
+            margin-left: 24px;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 43px;
+        }
+    }
+    &__rate-buy {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding: 25px 0 29px;
+        font-weight: 600;
+        color: #FFFFFF;
+        background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+        border-radius: 0 0 5px 55px;
+        &::after {
+            content: url('../../images/buy-arrow.svg');
+            position: absolute;
+            width: 44px;
+            height: 24px;
+            right: 80px;
+            top: 22px;
+        }
+    }
+}
+.prices__rate + .prices__rate {
+    margin-left: 36px;
+}
+.prices__rate-item + .prices__rate-item {
+    margin-top: 26px;
+}

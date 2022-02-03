@@ -60,6 +60,8 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     &::after {
         content: url('../images/buy-arrow.svg');
+        width: 44px;
+        height: 24px;
         position: absolute;
         right: 34px;
         top: 24px;
@@ -71,4 +73,48 @@ h1, h2, h3, h4, h5, h6 {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 41px;
+}
+.tab-icon {
+    fill: #aaa;
+    margin-right: 16px;
+}
+.tab-ios {
+    padding-top: 5px;
+}
+.tab-windows {
+    padding: 0 33px 0 33px;
+}
+.tab-android {
+    padding: 0 27px 0 27px;
+}
+.tab-ios {
+    padding: 0 28px 0 28px;
+}
+.tab {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-weight: bold;
+    color: #AAAAAA;
+    height: 73px;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+        box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
+        color: #FFFFFF;
+        .tab-icon {
+            fill: #FFFFFF;
+        }
+    }
+}
+.tab + .tab {
+    margin-left: 15px;
 }

@@ -1,5 +1,5 @@
 const firstTab = new Swiper(".functions__slider-tab-1", {
-  loop: false,
+  loop: true,
   navigation: {
     nextEl: ".tab-1-next",
     prevEl: ".tab-1-prev",
@@ -19,7 +19,6 @@ const thirdTab = new Swiper(".functions__slider-tab-3", {
     prevEl: ".tab-3-prev",
   },
 });
-
 $(".functions__tab").on("click", function (e) {
   e.preventDefault();
   $(".functions__tab").removeClass("functions__tab--active");
@@ -35,4 +34,13 @@ const reviews = new Swiper(".reviews__slider", {
     nextEl: ".reviews-next",
     prevEl: ".reviews-prev",
   },
+});
+
+$(".prices__tab").on("click", function (e) {
+  e.preventDefault();
+  $(".prices__tab").removeClass("prices__tab--active");
+  $(this).addClass("prices__tab--active");
+
+  $(".prices__content").removeClass("prices__content--active");
+  $($(this).attr("href")).addClass("prices__content--active");
 });
