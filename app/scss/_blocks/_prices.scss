@@ -11,18 +11,18 @@
         &::before {
             content: url('../../images/titles-decoration.svg');
             position: absolute;
-            top: -18px;
-            left: -30px;
             width: 40px;
             height: 8px;
+            top: -17px;
+            left: -27px;
         }
         &::after {
             content: url('../../images/titles-decoration.svg');
             position: absolute;
-            bottom: 24px;
-            right: -30px;
             width: 40px;
             height: 8px;
+            bottom: 26px;
+            right: -34px;
         }
     }
     &__tabs {

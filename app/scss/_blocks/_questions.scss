@@ -1,0 +1,87 @@
+.questions {
+    margin-top: 117px;
+    &__title-wrapper {
+        display: block;
+        text-align: center;
+        margin-bottom: 88px;
+    }
+    &__title {
+        display: inline-block;
+        position: relative;
+        &::before {
+            content: url('../../images/titles-decoration.svg');
+            position: absolute;
+            width: 40px;
+            height: 8px;
+            top: -17px;
+            left: -27px;
+        }
+        &::after {
+            content: url('../../images/titles-decorations-blue.svg');
+            position: absolute;
+            width: 40px;
+            height: 8px;
+            bottom: 26px;
+            right: -34px;
+        
+        }
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        width: 950px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        padding: 0 75px 0 36px;
+    }
+    &__item-title {
+        font-weight: 600;
+        color: #2E3A59;
+        padding: 37px 0 21px;
+        &::after {
+            content: url('../../images/accordion-show-more.svg');
+            position: absolute;
+            top: 36px;
+            right: 35px;
+            z-index: 3;
+            cursor: pointer;
+            transition: all .5s;
+        }
+    }
+    &__item-text {
+        display: none;
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: #727272;
+        padding: 21px 0 38px 21px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: calc(100% - 42px);
+            background: linear-gradient(120.79deg, #0AA6FE 31.33%, #05FFFF 101.79%);
+            top: 15%;
+            left: 0;
+        }
+    }
+    &__to-ask {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        text-decoration-line: underline;
+        color: #0AA6FE;
+        margin-top: 45px;
+    }
+}
+.questions__item + .questions__item {
+    margin-top: 25px;
+}
+.accordion--active::after {
+    transform: rotate(45deg);
+}
