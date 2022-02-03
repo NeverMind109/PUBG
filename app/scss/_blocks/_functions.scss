@@ -41,21 +41,29 @@
             }
         }
     }
-    &__content {
-        width: 100%;
-    }
-    &__slider-tab1 {
+    &__slider {
         position: relative;
         max-width: 100%;
-        max-height: 620px;
+        max-height: 680px;
     }
-    &__slider-item {
-        max-width: 100%;
+    &__slide {
+        text-align: center;
     }
     &__slider-image {
         object-fit: cover;
         width: 300px;
         height: 583px;
+    }
+    &__slider-text {
+        display: block;
+        margin-bottom: 10px;
+        padding-left: 25px;
+    }
+    &__content {
+        display: none;
+        &--active {
+            display: block;
+        }
     }
     &__info {
         max-width: 650px;
@@ -176,13 +184,13 @@
     z-index: 99;
 }
 .tabs-prev {
-    left: 20%;
+    left: 40%;
     &:hover {
         fill: url('#linear-gradient');
     }
 }
 .tabs-next {
-    right: 20%;
+    right: 35%;
     transform: rotate(180deg);
     &:hover {
         fill: url('#linear-gradient');
