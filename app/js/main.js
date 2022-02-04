@@ -7,14 +7,14 @@ $(function () {
     },
   });
   const secondTab = new Swiper(".functions__slider-tab-2", {
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: ".tab-2-next",
       prevEl: ".tab-2-prev",
     },
   });
   const thirdTab = new Swiper(".functions__slider-tab-3", {
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: ".tab-3-next",
       prevEl: ".tab-3-prev",

@@ -21,8 +21,8 @@
     <header class="header">
       <div class="header-top">
         <div class="container">
-          <div class="header-top__wrapper">
-            <a class="top-header__logo" href="index.html">
+          <div class="navigation header-top__wrapper">
+            <a class="logo top-header__logo" href="index.html">
               <img src="images/logo.svg" alt="Logo" />
             </a>
             <nav class="menu">
@@ -47,11 +47,11 @@
                 </li>
               </ul>
             </nav>
-            <div class="header-top__buttons">
-              <div class="header-top__language-box">
-                <span class="header-top__language">RU</span>
+            <div class="buttons">
+              <div class="language-box header-top__language-box">
+                <span class="language-box__text">RU</span>
               </div>
-              <div class="header-top__user" href="#"></div>
+              <div class="user__profile header-top__user" href="#"></div>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient">
+                      <linearGradient id="linear-gradient-1">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -198,7 +198,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient">
+                      <linearGradient id="linear-gradient-1">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -243,7 +243,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient">
+                      <linearGradient id="linear-gradient-2">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -259,7 +259,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient">
+                      <linearGradient id="linear-gradient-2">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -304,7 +304,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient">
+                      <linearGradient id="linear-gradient-3">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -320,7 +320,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient">
+                      <linearGradient id="linear-gradient-3">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -833,6 +833,84 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__title-wrppaer">
+            <h2 class="section-title contacts__title">КОНТАКТЫ</h2>
+          </div>
+          <div class="contacts__wrapper">
+            <form class="contacts__form" action="#">
+              <a class="contacts__form-discord" href="#">
+                <img src="images/discord-image.svg" alt="Discord Link" />
+              </a>
+              <a class="contacts__form-telegram" href="#">
+                <img src="images/telegram-image.svg" alt="Telegram Link" />
+              </a>
+              <span class="contacts__form-title">Обратная связь</span>
+              <input
+                class="contacts__form-input contacts__form-name"
+                type="text"
+                placeholder="Ваше имя"
+              />
+              <input
+                class="contacts__form-input contacts__form-email"
+                type="email"
+                placeholder="E-mail"
+              />
+              <textarea
+                class="contacts__form-textarea"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+              <div class="contacts__form-btn-wrapper">
+                <button class="contacts__form-btn" type="submit">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <div class="container">
+          <div class="navigation footer__navigation">
+            <a class="logo footer__logo" href="index.html">
+              <img src="images/logo.svg" alt="Logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">ГЛАВНАЯ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">ФУНКЦИОНАЛ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">ТАРИФЫ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">FAQ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="buttons">
+              <div class="language-box footer__language-box">
+                <span class="language-box__text">RU</span>
+              </div>
+              <div class="user__profile footer__user" href="#"></div>
+            </div>
+          </div>
+          <span class="footer__copy">Защищено 2022 (C)</span>
+        </div>
+      </section>
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

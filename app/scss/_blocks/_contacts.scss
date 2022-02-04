@@ -1,0 +1,135 @@
+.contacts {
+    margin-top: 102px;
+    &__title-wrppaer {
+        display: block;
+        text-align: center;
+        margin-bottom: 91px;
+    }
+    &__title {
+        display: inline-block;
+        position: relative;
+        max-width: 620px;
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 67px;
+        &::before {
+            content: url('../images/title-decoration.svg');
+            width: 40px;
+            height: 8px;
+            position: absolute;
+            top: -17px;
+            left: -29px;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: right;
+        &::before {
+            content: url('../../images/contacts-image.png');
+            position: absolute;
+            width: 974px;
+            height: 655px;
+            top: -50px;
+            left: -260px;
+        }
+    }
+    &__form {
+        position: relative;
+        width: 644px;
+        padding: 48px 32px 33px 62px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+    }
+    &__form-discord {
+        position: absolute;
+        width: 115px;
+        height: 115px;
+        bottom: -20px;
+        left: -101px;
+    }
+    &__form-telegram {
+        position: absolute;
+        width: 162px;
+        height: 162px;
+        top: -95px;
+        right: -61px;
+    }
+    &__form-title {
+        display: block;
+        font-weight: 600;
+        color: #2E3A59;
+        margin-bottom: 25px;
+    }
+    &__form-input {
+        width: 47%;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(46, 58, 89, 0.43);
+        border: none;
+        border-bottom: 0.3px solid rgba(46, 58, 89, 0.43);
+        padding: 17px 29px;
+        &::placeholder {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(46, 58, 89, 0.43);
+        }
+    }
+    &__form-name {
+        background-image: url('../../images/user-icon.svg');
+        background-repeat: no-repeat;
+        background-position: top 12px left 3px;
+    }
+    &__form-email {
+        background-image: url('../../images/email-icon.svg');
+        background-repeat: no-repeat;
+        background-position: top 17px left 3px;
+    }
+    &__form-textarea {
+        position: relative;
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;        
+        color: rgba(46, 58, 89, 0.43);
+        resize: none;
+        border: none;
+        border-bottom: 0.3px solid rgba(46, 58, 89, 0.43);
+        padding: 10px 10px 80px 28px;
+        margin: 40px 0 45px;
+        background-image: url('../../images/comment-icon.svg');
+        background-repeat: no-repeat;
+        background-position: top 10px left 3px;
+        &::placeholder {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(46, 58, 89, 0.43);
+        }
+    }
+    &__form-btn-wrapper {
+        display: block;
+        text-align: center;
+    }
+    &__form-btn {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 23px 47px;
+        color: #FFFFFF;
+        background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        margin: 0 auto;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
