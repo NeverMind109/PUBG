@@ -72,13 +72,14 @@
     }
     &__name {
         position: relative;
+        display: inline-block;
         font-weight: 600;
         color: #2E3A59;
         margin-bottom: 20px;
         &::after {
             content: url('../../images/reviews-name-decor.svg');
             position: absolute;
-            left: 109px;
+            right: -72px;
             top: -8px;
         }
     }

@@ -121,13 +121,7 @@
         background: #FF3B3B;
         border-radius: 5px;
         color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        border: none;
-        cursor: pointer;
         &::after {
             content: url('../../images/play-icon.svg');
             width: 33px;
@@ -159,18 +153,33 @@
     right: 35%;
     transform: rotate(180deg);
 }
-.tab-1-prev,.tab-1-next {
+.tab-1-prev {
     &:hover {
         fill: url('#linear-gradient-1');
     }
 }
-.tab-2-prev,.tab-2-next {
+.tab-1-next {
     &:hover {
         fill: url('#linear-gradient-2');
     }
 }
-.tab-3-prev,.tab-3-next {
+.tab-2-prev,.tab-2-next {
     &:hover {
         fill: url('#linear-gradient-3');
+    }
+}
+.tab-2-next {
+    &:hover {
+        fill: url('#linear-gradient-4');
+    }
+}
+.tab-3-prev {
+    &:hover {
+        fill: url('#linear-gradient-5');
+    }
+}
+.tab-3-next {
+    &:hover {
+        fill: url('#linear-gradient-6');
     }
 }

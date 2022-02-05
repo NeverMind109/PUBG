@@ -7,6 +7,10 @@
     <title>Читы на PUBG</title>
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,28 +26,36 @@
       <div class="header-top">
         <div class="container">
           <div class="navigation header-top__wrapper">
-            <a class="logo top-header__logo" href="index.html">
+            <a class="logo header-top__logo" href="index.html">
               <img src="images/logo.svg" alt="Logo" />
             </a>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ГЛАВНАЯ</a>
+                  <a class="menu__list-link scroll-to" href="index.html"
+                    >ГЛАВНАЯ</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ФУНКЦИОНАЛ</a>
+                  <a class="menu__list-link scroll-to" href="#functions"
+                    >ФУНКЦИОНАЛ</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
+                  <a class="menu__list-link scroll-to" href="#reviews"
+                    >ОТЗЫВЫ</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ТАРИФЫ</a>
+                  <a class="menu__list-link scroll-to" href="#prices">ТАРИФЫ</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">FAQ</a>
+                  <a class="menu__list-link scroll-to" href="#questions">FAQ</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+                  <a class="menu__list-link scroll-to" href="#contacts"
+                    >КОНТАКТЫ</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -51,7 +63,7 @@
               <div class="language-box header-top__language-box">
                 <span class="language-box__text">RU</span>
               </div>
-              <div class="user__profile header-top__user" href="#"></div>
+              <a class="user-profile header-top__user" href="#"></a>
             </div>
           </div>
         </div>
@@ -62,8 +74,9 @@
             <div class="header-bottom__info">
               <h1 class="header-bottom__title">
                 ЧИТЫ НА P<img
-                  class="header-bottom__title--decoration"
+                  class="header-bottom__title-decoration"
                   src="images/pubg-decoration.svg"
+                  alt="Decorative Element"
                 />BG ЛУЧШИЕ НА РЫНКЕ БЕЗ БАНА!
               </h1>
               <div class="header-bottom__line">
@@ -80,15 +93,24 @@
               </p>
               <p class="header-bottom__text">Самая низкая цена за мегахеш</p>
               <div class="header-bottom__buttons">
-                <button class="buy-button header-bottom__buy">Купить</button>
-                <button class="header-bottom__watch">Посмотреть видео</button>
+                <a
+                  class="buy-button header-bottom__buy scroll-to"
+                  href="#prices"
+                  >Купить</a
+                >
+                <a
+                  class="header-bottom__watch"
+                  href="https://www.youtube.com/watch?v=u1oqfdh4xBY"
+                  data-fancybox
+                  >Посмотреть видео</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="functions">
+    <section class="functions" id="functions">
       <div class="container">
         <div class="functions__wrapper">
           <div class="functions__navigation">
@@ -98,7 +120,7 @@
                 href="#tab-1"
               >
                 <svg
-                  class="functions__tab-icon tab-icon tab-ios__icon"
+                  class="functions__tab-icon tab-icon tab-ios-icon"
                   width="33"
                   height="29"
                   viewBox="0 0 33 29"
@@ -114,7 +136,7 @@
               </a>
               <a class="functions__tab tab tab-android" href="#tab-2">
                 <svg
-                  class="functions__tab-icon tab-icon tab-ios__icon"
+                  class="functions__tab-icon tab-icon tab-ios-icon"
                   width="33"
                   height="39"
                   viewBox="0 0 33 39"
@@ -130,7 +152,7 @@
               </a>
               <a class="functions__tab tab tab-ios" href="#tab-3">
                 <svg
-                  class="functions__tab-icon tab-icon tab-ios__icon"
+                  class="functions__tab-icon tab-icon tab-ios-icon"
                   width="30"
                   height="40"
                   viewBox="0 0 30 40"
@@ -198,7 +220,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient-1">
+                      <linearGradient id="linear-gradient-2">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -243,7 +265,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient-2">
+                      <linearGradient id="linear-gradient-3">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -259,7 +281,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient-2">
+                      <linearGradient id="linear-gradient-4">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -304,7 +326,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient-3">
+                      <linearGradient id="linear-gradient-5">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -320,7 +342,7 @@
                       viewBox="0 0 61 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <linearGradient id="linear-gradient-3">
+                      <linearGradient id="linear-gradient-6">
                         <stop offset="-7.86%" stop-color="#0AA6FE" />
                         <stop offset="96.71%" stop-color="#00E0FF" />
                       </linearGradient>
@@ -361,14 +383,21 @@
               Рекомендуем, оставить стандартные параметры в чите
             </div>
             <div class="functions__buttons">
-              <button class="buy-button functions__buy">Купить</button>
-              <button class="functions__watch">Посмотреть видео</button>
+              <a class="buy-button functions__buy scroll-to" href="#prices"
+                >Купить</a
+              >
+              <a
+                class="functions__watch"
+                href="https://www.youtube.com/watch?v=u1oqfdh4xBY"
+                data-fancybox
+                >Посмотреть видео</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <div class="reviews__wrapper">
           <h2 class="section-title reviews__title-wrapper">
@@ -398,13 +427,11 @@
                     src="images/reviews-photo.jpg"
                     alt="Review Photo"
                   />
-                  <span class="reviews__name">Lorem, ipsum.</span>
+                  <span class="reviews__name">Далеко-далеко, за</span>
                   <p class="reviews__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima, cumque consequuntur! Quo provident, ab esse
-                    perferendis iure incidunt aut voluptatem dolor aspernatur
-                    aliquam sit praesentium pariatur, consequatur quaerat
-                    dolore. Sed.
+                    Далеко-далеко за, словесными горами в стране гласных и
+                    согласных живут рыбные тексты. Большого свой заглавных раз
+                    переписывается!
                   </p>
                 </div>
               </div>
@@ -415,11 +442,13 @@
                     src="images/reviews-photo.jpg"
                     alt="Review Photo"
                   />
-                  <span class="reviews__name">Lorem, ipsum.</span>
+                  <span class="reviews__name">Далеко-далеко, за</span>
                   <p class="reviews__text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Vero sequi voluptate maxime iure totam provident blanditiis.
-                    Animi officiis quas molestias!
+                    Далеко-далеко за словесными, горами в стране гласных и
+                    согласных живут рыбные тексты. Рукопись собрал речью не
+                    обеспечивает вскоре сбить переписывается его. Рукописи путь
+                    курсивных дороге безопасную текста свой лучше вершину, семь
+                    текстов города составитель гор грустный там.
                   </p>
                 </div>
               </div>
@@ -446,13 +475,13 @@
           <div class="prices__title-wrapper">
             <h2 class="section-title prices__title">ТАРИФЫ</h2>
           </div>
-          <div class="prices__tabs tabs">
+          <div class="prices__tabs tabs" id="prices">
             <a
               class="prices__tab tab prices__tab--active tab-windows"
               href="#price-1"
             >
               <svg
-                class="prices__tab-icon tab-icon tab-ios__icon"
+                class="prices__tab-icon tab-icon tab-ios-icon"
                 width="33"
                 height="29"
                 viewBox="0 0 33 29"
@@ -468,7 +497,7 @@
             </a>
             <a class="prices__tab tab tab-android" href="#price-2">
               <svg
-                class="prices__tab-icon tab-icon tab-ios__icon"
+                class="prices__tab-icon tab-icon tab-ios-icon"
                 width="33"
                 height="39"
                 viewBox="0 0 33 39"
@@ -484,7 +513,7 @@
             </a>
             <a class="prices__tab tab tab-ios" href="#price-3">
               <svg
-                class="prices__tab-icon tab-icon tab-ios__icon"
+                class="prices__tab-icon tab-icon tab-ios-icon"
                 width="30"
                 height="40"
                 viewBox="0 0 30 40"
@@ -776,7 +805,7 @@
         </div>
       </div>
     </section>
-    <section class="questions">
+    <section class="questions" id="questions">
       <div class="container">
         <div class="questions__wrapper">
           <div class="questions__title-wrapper">
@@ -794,10 +823,12 @@
             <div class="questions__item">
               <h4 class="questions__item-title">Как устанавливаются читы?</h4>
               <p class="questions__item-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                magnam quibusdam ipsa aspernatur, deleniti corrupti officiis
-                ullam inventore explicabo molestias suscipit ratione aut qui.
-                Velit!
+                Далеко-далеко за словесными горами в стране гласных и согласных
+                живут рыбные тексты. Маленький одна от всех по всей проектах
+                собрал злых путь меня, составитель, коварных что повстречался но
+                послушавшись курсивных? Свой буквенных предупреждал маленький
+                собрал рукописи своего ipsum встретил назад текст, это строчка
+                предупредила!
               </p>
             </div>
             <div class="questions__item">
@@ -805,16 +836,20 @@
                 Что я получу после оплаты тарифа?
               </h4>
               <p class="questions__item-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, mollitia?
+                Далеко-далеко за словесными горами в стране, гласных и согласных
+                живут рыбные тексты. Сбить власти о запятой. Которое вскоре
+                языкового на берегу встретил проектах.
               </p>
             </div>
             <div class="questions__item">
               <h4 class="questions__item-title">Что такое DPI+, ASN, SKK?</h4>
               <p class="questions__item-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                ducimus fuga praesentium aliquid harum. Sapiente excepturi iste
-                molestias harum fugiat.
+                Далеко-далеко за словесными горами в стране гласных и согласных
+                живут рыбные тексты. Маленький, сих там предупредила прямо имеет
+                большой переписали взобравшись предупреждал снова ручеек то
+                родного выйти повстречался знаках букв курсивных путь над,
+                пунктуация щеке имени семь злых, буквоград залетают! Эта решила
+                семь грустный великий, коварных снова?
               </p>
             </div>
             <div class="questions__item">
@@ -822,19 +857,21 @@
                 Влияют-ли читы на FPS в игре?
               </h4>
               <p class="questions__item-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
-                praesentium veniam earum natus placeat nam dolorum consequuntur,
-                deserunt ratione quis dolore, sint odio vero pariatur dolores
-                voluptatibus laudantium exercitationem facilis?
+                Далеко-далеко за словесными горами в стране гласных и согласных
+                живут рыбные тексты. Рукописи раз рекламных первую путь дал
+                осталось, рукопись сбить вопроса семантика но. Своих великий
+                жаренные сих! Повстречался свой семь залетают!
               </p>
             </div>
           </div>
-          <a class="questions__to-ask" href="#">У меня есть вопрос</a>
+          <a class="questions__to-ask scroll-to" href="#contacts"
+            >У меня есть вопрос</a
+          >
         </div>
       </div>
     </section>
     <footer class="footer">
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__title-wrppaer">
             <h2 class="section-title contacts__title">КОНТАКТЫ</h2>
@@ -870,10 +907,6 @@
               </div>
             </form>
           </div>
-        </div>
-      </section>
-      <section class="footer__bottom">
-        <div class="container">
           <div class="navigation footer__navigation">
             <a class="logo footer__logo" href="index.html">
               <img src="images/logo.svg" alt="Logo" />
@@ -881,22 +914,30 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ГЛАВНАЯ</a>
+                  <a class="menu__list-link scroll-to" href="index.html"
+                    >ГЛАВНАЯ</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ФУНКЦИОНАЛ</a>
+                  <a class="menu__list-link scroll-to" href="#functions"
+                    >ФУНКЦИОНАЛ</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
+                  <a class="menu__list-link scroll-to" href="#reviews"
+                    >ОТЗЫВЫ</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">ТАРИФЫ</a>
+                  <a class="menu__list-link scroll-to" href="#prices">ТАРИФЫ</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">FAQ</a>
+                  <a class="menu__list-link scroll-to" href="#questions">FAQ</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+                  <a class="menu__list-link scroll-to" href="#contacts"
+                    >КОНТАКТЫ</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -904,13 +945,14 @@
               <div class="language-box footer__language-box">
                 <span class="language-box__text">RU</span>
               </div>
-              <div class="user__profile footer__user" href="#"></div>
+              <a class="user-profile footer__user" href="#"></a>
             </div>
           </div>
           <span class="footer__copy">Защищено 2022 (C)</span>
         </div>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

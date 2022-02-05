@@ -87,13 +87,12 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
-.user__profile {
+.user-profile {
     width: 77px;
     background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
-    padding: 14px 26px;
-    cursor: pointer;
+    padding: 13px 26px;
     &::after {
         content: url('../../images/user.svg');
         width: 25px;
@@ -134,17 +133,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .buy-button {
     position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
     color: #fff;
     background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
-    border: none;
-    cursor: pointer;
     &::after {
         content: url('../images/buy-arrow.svg');
         width: 44px;
