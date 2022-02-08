@@ -72,4 +72,11 @@ $(function () {
         800
       );
   });
+
+  $(".menu-mobile").on("click", function () {
+    $(".menu").toggleClass("menu--active");
+    $(".menu__list-link").on("click", function () {
+      $(".menu").removeClass("menu--active");
+    });
+  });
 });

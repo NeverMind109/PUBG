@@ -54,6 +54,7 @@ function libscss() {
 function scripts() {
   return src([
     "node_modules/jquery/dist/jquery.js",
+    "node_modules/jquery-equal-height/js/jquery-equal-height.js",
     "node_modules/wow.js/dist/wow.js",
     "app/js/main.js",
   ])

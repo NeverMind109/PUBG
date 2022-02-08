@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     margin: 0;
 }
+button:active, button:focus {
+    outline: none !important;
+  }
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
 .container {
     max-width: 1440px;
     padding: 0 15px;
@@ -44,6 +51,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 45px;
     line-height: 55px;
     color: #2E3A59;
+}
+.logo{
+    position: relative;
+    z-index: 2;
+    img{
+        vertical-align: middle;
+    }
 }
 .navigation {
     display: flex;
@@ -70,12 +84,15 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         color: #2E3A59;
         &::before {
-            content: url('../images/flag.jpg');
+            content: '';
+            background: url('../images/flag.jpg') no-repeat;
+            background-position: center;
+            background-size: contain;
             width: 30px;
             height: 20px;
             position: absolute;
-            top: -4px;
-            left: 16px;
+            top: 0;
+            left: 15px;
         }
         &::after {
             content: url('../images/caret-down.svg');
@@ -88,13 +105,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 .user-profile {
+    position: relative;
     width: 77px;
     background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
-    padding: 13px 26px;
+    padding: 16px 26px;
     &::after {
-        content: url('../../images/user.svg');
+        content: '';
+        background: url('../images/user.svg') no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: block;
         width: 25px;
         height: 27px;
     }
@@ -103,6 +125,9 @@ h1, h2, h3, h4, h5, h6 {
     &__list {
         display: flex;
         align-items: center;
+    }
+    &__list-item-profile {
+        display: none;
     }
     &__list-link {
         position: relative;
@@ -121,12 +146,33 @@ h1, h2, h3, h4, h5, h6 {
             transform: translateX(50%);
         }
         &:hover {
+            color: #fff;
+            text-decoration: none;
             &:after {
                 content: '';
                 display: block;
                 }
         }
     }
+    &-mobile {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &-line {
+            background-color: #fff;
+            width: 35px;
+            height: 1px;
+        }
+    }
+}
+.menu-mobile-line + .menu-mobile-line {
+    margin-top: 11px;
 }
 .menu__list-item + .menu__list-item {
     margin-left: 80px;
@@ -139,7 +185,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     &::after {
-        content: url('../images/buy-arrow.svg');
+        content: '';
+        background: url('../images/buy-arrow.svg') no-repeat;
+        background-position: center;
+        background-size: cover;
         width: 44px;
         height: 24px;
         position: absolute;
@@ -158,14 +207,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 41px;
 }
 .tab-icon {
     fill: #aaa;
     margin-right: 16px;
-}
-.tab-ios {
-    padding-top: 5px;
 }
 .tab-windows {
     padding: 0 33px 0 33px;
@@ -175,6 +220,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .tab-ios {
     padding: 0 28px 0 28px;
+}
+.tab-ios-icon {
+    margin-top: -6px;
 }
 .tab {
     display: flex;

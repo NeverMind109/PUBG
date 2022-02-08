@@ -10,7 +10,7 @@
     }
     &__tabs {
         justify-content: space-between;
-        margin-bottom: 41px;
+        margin-bottom: 40px;
     }
     &__slider {
         position: relative;
@@ -36,35 +36,47 @@
             display: block;
         }
     }
+    &__heading {
+        display: none;
+    }
     &__info {
         max-width: 650px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    &__description {
+        display: none;
+    }
     &__title {
         position: relative;
         display: inline-block;
         margin-bottom: 25px;
         &::before {
-            content: url('../../images/titles-decoration.svg');
+            content: '';
+            background: url('../../images/titles-decoration.svg') no-repeat;
+            background-size: contain;
+            background-position: center;
             width: 40px;
-            height: 8px;
+            height: 40px;
             position: absolute;
-            top: -17px;
+            top: -8px;
             left: -27px;
         }
         &::after {
-            content: url('../../images/titles-decoration.svg');
+            content: '';
+            background: url('../../images/titles-decoration.svg') no-repeat;
+            background-size: contain;
+            background-position: center;
             width: 40px;
-            height: 8px;
+            height: 40px;
             position: absolute;
-            bottom: 26px;
+            bottom: -11px;
             right: -34px;
         }
     }
     &__text {
-        width: 495px;
+        max-width: 495px;
         text-align: center;
         color: #828282;
         margin-bottom: 60px;
@@ -116,6 +128,7 @@
         margin-right: 23px;
     }
     &__watch {
+        display: inline-block;
         position: relative;
         padding: 28px 80px 28px 28px;
         background: #FF3B3B;
@@ -135,6 +148,18 @@
         }
     }
 }
+.tab-widows-icon {
+    width: 33px;
+    height: 29px;
+}
+.tab-android-icon {
+    width: 33px;
+    height: 39px;
+}
+.tab-ios-icon {
+    width: 30px;
+    height: 40px;
+}
 .tabs-buttons {
     position: absolute;
     bottom: 0;
@@ -147,10 +172,10 @@
     z-index: 99;
 }
 .tabs-prev {
-    left: 40%;
+    left: 39%;
 }
 .tabs-next {
-    right: 35%;
+    right: 33%;
     transform: rotate(180deg);
 }
 .tab-1-prev {

@@ -7,3 +7,92 @@
     background-position: top left -1px;
     background-size: cover;
 }
+.header-top {
+    padding-top: 30px;
+}
+.header-bottom {
+    position: relative;
+    padding: 106px 0 244px;
+    &__car {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        &-img {
+            width: 1048px;
+            height: 661px;
+        }
+    }
+    &__weapon {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        &-img {     
+            width: 812px;
+            height: 261px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__title {
+        position: relative;
+        max-width: 620px;
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 67px;
+        &::before {
+            content: '';
+            background-image: url('../../images/title-decoration.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 40px;
+            height: 50px;
+            position: absolute;
+            top: -12px;
+            left: -25px;
+        }
+    }
+    &__title-decoration {
+        width: 42px;
+        height: 42px;
+    }
+    &__line {
+        margin: 28px 0;
+    }
+    &__text {
+        max-width: 680px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 45px;
+    }
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 14px;
+    }
+    &__buy {
+        padding: 28px 124px 28px 48px;
+        margin-right: 34px;
+    }
+    &__watch {
+        display: inline-block;
+        font-weight: 600;
+        color: #fff;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 28px 39px;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
+        &:hover {
+            box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.5);
+        }
+        &-mobile {
+            display: none;
+        }
+    }
+}

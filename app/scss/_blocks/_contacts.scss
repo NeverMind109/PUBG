@@ -13,26 +13,42 @@
         font-size: 55px;
         line-height: 67px;
         &::before {
-            content: url('../images/title-decoration.svg');
+            content: '';
+            background-image: url('../../images/title-decoration.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
             width: 40px;
-            height: 8px;
+            height: 50px;
             position: absolute;
-            top: -17px;
-            left: -29px;
+            top: -12px;
+            left: -25px;
         }
     }
     &__wrapper {
         position: relative;
         display: flex;
         justify-content: right;
-        &::before {
-            content: url('../../images/contacts-image.png');
-            position: absolute;
-            width: 974px;
-            height: 655px;
-            top: -50px;
-            left: -260px;
-        }
+    }
+    &__load {
+        position: absolute;
+        left: 0;
+    }
+    &__locker-img {
+        position: absolute;
+        top: 118px;
+        left: -298px;
+        width: 974px;
+        height: 548px;
+        object-fit: cover;
+    }
+    &__smoke-img {
+        position: absolute;
+        top: 40px;
+        left: 35px;
+        width: 421px;
+        height: 458px;
+        object-fit: none;
     }
     &__form {
         position: relative;
@@ -44,17 +60,26 @@
     }
     &__form-discord {
         position: absolute;
+        bottom: -59px;
+        left: -59px;
         width: 115px;
         height: 115px;
-        bottom: -20px;
-        left: -101px;
+        img {
+            width: 115px;
+            height: 115px;
+            object-fit: cover;
+        }
     }
     &__form-telegram {
         position: absolute;
-        width: 162px;
-        height: 162px;
-        top: -95px;
-        right: -61px;
+        top: -54px;
+        right: -57px;
+        width: 115px;
+        height: 115px;
+        img {   
+            width: 115px;
+            height: 115px;
+        }
     }
     &__form-title {
         display: block;
@@ -64,12 +89,16 @@
     }
     &__form-input {
         width: 47%;
+        height: 40px;
         font-size: 14px;
         line-height: 17px;
         color: rgba(46, 58, 89, 0.43);
         border: none;
         border-bottom: 0.3px solid rgba(46, 58, 89, 0.43);
-        padding: 17px 29px;
+        padding: 5px 29px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
         &::placeholder {
             font-family: Montserrat;
             font-style: normal;
@@ -92,6 +121,7 @@
     &__form-textarea {
         position: relative;
         width: 100%;
+        font-weight: normal;
         font-size: 14px;
         line-height: 17px;        
         color: rgba(46, 58, 89, 0.43);
