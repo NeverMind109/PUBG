@@ -79,4 +79,84 @@ $(function () {
       $(".menu").removeClass("menu--active");
     });
   });
+
+  var openModalUser = $("[data-toggle=user-modal");
+  var closeModalUser = $(".modal__close");
+  openModalUser.on("click", openModal);
+  closeModalUser.on("click", closeModal);
+
+  function openModal() {
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal)
+      .find(".modal__user-profile")
+      .addClass("modal__user-profile--visible");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__user-profile");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__user-profile--visible");
+  }
+
+  $(".modal__tab").on("click", function (e) {
+    e.preventDefault();
+    $(".modal__tab").removeClass("modal__tab--active");
+    $(this).addClass("modal__tab--active");
+
+    $(".modal__tab-content").removeClass("modal__tab-content--active");
+    $($(this).attr("href")).addClass("modal__tab-content--active");
+  });
+
+  $(".contacts__form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          minlength: "Ваше имя должно быть длиннее 2 символов",
+        },
+        email: {
+          email:
+            "Ваш почтовый адрес должен соответствовать формату name@domain.com",
+        },
+      },
+    });
+  });
+
+  $(".modal__register").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          minlength: "Ваше имя должно быть длиннее 2 символов",
+        },
+        password: {
+          minlength: "Пароль должнен быть длиннее 6 символов",
+          maxlength: "Пароль не может быть длинее 30 символов",
+        },
+        password_again: {
+          required: "Пожалуйста, повторите пароль",
+        },
+        email: {
+          email:
+            "Ваш почтовый адрес должен соответствовать формату name@domain.com",
+        },
+        checkbox: {
+          required: "Чтобы завершить регистрацию примите правила",
+        },
+      },
+    });
+  });
+  $(".modal__login").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста, укажите свой логин или email",
+          minlength: "Ваше логин должен быть длиннее 2 символов",
+        },
+      },
+    });
+  });
 });

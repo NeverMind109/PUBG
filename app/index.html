@@ -57,12 +57,15 @@
                     >КОНТАКТЫ</a
                   >
                 </li>
-                <li class="menu__list-item-profile user-profile">
-                  <a class="user-profile header-top__user" href="#"></a>
-                </li>
               </ul>
+              <button
+                class="menu__list-item-profile user-profile"
+                type="button"
+                data-toggle="user-modal"
+                data-href="#user-modal"
+              ></button>
             </nav>
-            <button class="menu-mobile">
+            <button class="menu-mobile" type="menu">
               <span class="menu-mobile-line"></span>
               <span class="menu-mobile-line"></span>
             </button>
@@ -70,7 +73,12 @@
               <div class="language-box header-top__language-box">
                 <span class="language-box__text">RU</span>
               </div>
-              <a class="user-profile header-top__user" href="#"></a>
+              <button
+                class="user-profile header-top__user"
+                type="button"
+                data-toggle="user-modal"
+                data-href="#user-modal"
+              ></button>
             </div>
           </div>
         </div>
@@ -500,7 +508,7 @@
                 </div>
               </div>
             </div>
-            <button class="reviews-button reviews-prev">
+            <button class="reviews-button reviews-prev" type="button">
               <img
                 class="reviews-button-img"
                 src="images/reviews-button-prev.png"
@@ -522,7 +530,7 @@
                 </svg>
               </span>
             </button>
-            <button class="reviews-button reviews-next">
+            <button class="reviews-button reviews-next" type="button">
               <img
                 class="reviews-button-img"
                 src="images/reviews-button-next.png"
@@ -1001,12 +1009,17 @@
               <input
                 class="contacts__form-input contacts__form-name"
                 type="text"
+                name="name"
                 placeholder="Ваше имя"
+                minlength="2"
+                required
               />
               <input
                 class="contacts__form-input contacts__form-email"
                 type="email"
+                name="email"
                 placeholder="E-mail"
+                required
               />
               <textarea
                 class="contacts__form-textarea"
@@ -1058,13 +1071,125 @@
               <div class="language-box footer__language-box">
                 <span class="language-box__text">RU</span>
               </div>
-              <a class="user-profile footer__user" href="#"></a>
+              <button
+                class="user-profile footer__user"
+                type="button"
+                data-toggle="user-modal"
+                data-href="#user-modal"
+              ></button>
             </div>
           </div>
           <span class="footer__copy">Защищено 2022 (C)</span>
         </div>
       </section>
     </footer>
+    <section class="modal" id="user-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__user-profile">
+        <a class="modal__close" href="#"></a>
+        <div class="modal__tabs">
+          <a class="modal__tab modal__tab--active" href="#login"
+            ><span class="modal__tab-name">Авторизация</span></a
+          >
+          <a class="modal__tab" href="#register"
+            ><span class="modal__tab-enter">Регистрация</span></a
+          >
+        </div>
+        <div class="modal__tab-contentbox">
+          <div class="modal__tab-content modal__tab-content--active" id="login">
+            <span class="modal__tab-text">Войти на сайт</span>
+            <form
+              class="modal__form modal__login"
+              name="modal-login"
+              action="#"
+            >
+              <input
+                class="modal__input modal__name"
+                type="text"
+                name="name"
+                placeholder="Введите логин или email"
+                minlength="2"
+                checked
+              />
+              <input
+                class="modal__input modal__password"
+                type="password"
+                name="password"
+                placeholder="Пароль"
+                checked
+              />
+              <input
+                class="modal__old-checkbox"
+                id="remember"
+                type="checkbox"
+                checked
+              />
+              <label class="modal__custom-checkbox" for="remember"
+                ><span class="modal__check-text">Запомнить меня</span></label
+              >
+              <div class="modal__buttons">
+                <button class="modal__button" type="submit">Войти</button>
+                <a class="modal__link" href="#">Восстановить пароль</a>
+              </div>
+            </form>
+          </div>
+          <div class="modal__tab-content" id="register">
+            <form
+              class="modal__form modal__register"
+              name="modal-register"
+              action="#"
+            >
+              <input
+                class="modal__input modal__name"
+                type="text"
+                name="name"
+                placeholder="Логин"
+                minlength="2"
+                checked
+              />
+              <input
+                class="modal__input modal__password"
+                type="password"
+                name="password"
+                placeholder="Пароль"
+                minlength="6"
+                maxlength="30"
+                checked
+              />
+              <input
+                class="modal__input modal__password"
+                type="password"
+                name="password_again"
+                placeholder="Повторите пароль"
+                checked
+              />
+              <input
+                class="modal__input modal__email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                checked
+              />
+              <input
+                class="modal__old-checkbox"
+                id="check-agree"
+                name="checkbox"
+                type="checkbox"
+                checked
+              />
+              <label class="modal__custom-checkbox" for="check-agree"></label>
+              <a class="modal__check-text modal__policy" href="#"
+                >Я принимаю правила пользования сайтом и правила обработки
+                персональных данных</a
+              >
+              <button class="modal__button modal__register-btn" type="submit">
+                Зарегистрироваться
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>

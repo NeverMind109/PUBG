@@ -243,6 +243,72 @@
     .prices__rate + .prices__rate {
         margin-left: 20px;
     }
+    .modal {
+        &__overlay {
+            display: none;
+        }
+        &__user-profile {
+            width: 100%;
+            min-height: 100vh;
+            font-size: 30px;
+            line-height: 37px;
+            padding: 100px 100px 15px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translate(0);
+        }
+        &__close {
+            top: 25px;
+            right: 25px;
+            width: 40px;
+            height: 40px;
+            &::before {
+                height: 40px;
+                left: 20px;
+            }
+            &::after {
+                height: 40px;
+                left: 20px;
+            }
+        }
+        &__tabs {
+            margin-bottom: 40px;
+        }
+        &__tab {
+            margin-right: 25px;
+            font-size: 30px;
+            line-height: 34px;
+        }
+        &__tab-text {
+            margin: 0 0 30px;
+        }
+        &__input {
+            height: 60px;
+            padding: 15px 10px 15px;
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            &::placeholder {
+                font-size: 25px;
+                line-height: 28px;
+            }
+        }
+        &__button {
+            padding: 20px 30px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__check-text {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &__link {
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
 }
 @media (max-width: 1100px) {
     .prices {
@@ -747,6 +813,58 @@
             margin: 45px auto 0;
         }
     }
+    .modal {
+        &__user-profile {
+            padding: 50px 75px 10px;
+        }
+        &__close {
+            top: 30px;
+            right: 30px;
+        }
+        &__tabs {
+            margin-bottom: 40px;
+        }
+        &__tab {
+            display: block;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 25px;
+            font-size: 30px;
+            line-height: 34px;
+            text-align: center;
+        }
+        &__input {
+            height: 55px;
+            font-size: 22px;
+            line-height: 25px;
+            margin-bottom: 30px;
+            &::placeholder {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        &__buttons {
+            flex-wrap: wrap;
+        }
+        &__button {
+            padding: 15px 25px;
+            font-size: 22px;
+            line-height: 25px;
+        }
+        &__link {
+            display: block;
+            width: 100%;
+            font-size: 22px;
+            line-height: 24px;
+        }
+        &__policy {
+            font-size: 15px;
+            line-height: 17px;
+        }
+        &__register-btn {
+            margin: 30px auto 10px;
+        }
+    }
 }
 @media (max-width: 500px) {
     .functions {
@@ -774,6 +892,40 @@
         }
         &__form-telegram {
             right: 28%;
+        }
+    }
+    .modal {
+        &__user-profile {
+            padding: 35px 15px 10px;
+        }
+        &__close {
+            top: 12px;
+            right: 12px;
+            width: 30px;
+            height: 30px;
+            &::before {
+                height: 30px;
+                left: 15px;
+            }
+            &::after {
+                height: 30px;
+                left: 15px;
+            }
+        }
+        &__tab {
+            margin-bottom: 30px;
+            font-size: 27px;
+            line-height: 29px;
+        }
+        &__buttons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__button {
+            padding: 15px 20px;
+        }
+        &__link {
+            text-align: center;
         }
     }
 }
