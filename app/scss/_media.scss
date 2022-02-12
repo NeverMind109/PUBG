@@ -252,12 +252,13 @@
             min-height: 100vh;
             font-size: 30px;
             line-height: 37px;
-            padding: 100px 100px 15px;
+            padding: 75px 100px 15px;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             transform: translate(0);
+            overflow-y: scroll;
         }
         &__close {
             top: 25px;
@@ -289,7 +290,7 @@
             padding: 15px 10px 15px;
             font-size: 25px;
             line-height: 30px;
-            margin-bottom: 30px;
+            margin: 20px 0;
             &::placeholder {
                 font-size: 25px;
                 line-height: 28px;
@@ -756,28 +757,29 @@
             line-height: 17px;
             text-align: center;
         }
+        &__form-wrapper {
+            flex-basis: 100%;
+        }
         &__form-input {
-            width: 100%;
-            font-weight: normal;
             font-size: 13px;
             line-height: 16px;
-            margin-bottom: 35px;
+            margin: 10px 0;
             &::placeholder {
                 font-size: 13px;
                 line-height: 16px;
             }
         }
         &__form-name {
-            background-position: top 10px left 3px;
+            background-position: top 8px left 3px;
         }
         &__form-email {
-            background-position: top 13px left 3px;
+            background-position: top 12px left 3px;
         }
         &__form-textarea {
             font-weight: normal;
             font-size: 13px;
             line-height: 16px;
-            margin: 0 0 30px;
+            margin: 10px 0 30px;
             padding: 10px 10px 60px 28px;
             &::placeholder {
                 font-size: 13px;
@@ -837,7 +839,7 @@
             height: 55px;
             font-size: 22px;
             line-height: 25px;
-            margin-bottom: 30px;
+            margin: 15px 0;
             &::placeholder {
                 font-size: 20px;
                 line-height: 24px;
@@ -864,6 +866,10 @@
         &__register-btn {
             margin: 30px auto 10px;
         }
+    }
+    label.invalid-feedback {
+        font-size: 12px;
+        line-height: 14px;
     }
 }
 @media (max-width: 500px) {

@@ -111,7 +111,7 @@ $(function () {
 
   $(".contacts__form").each(function () {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: "invalid-feedback",
       messages: {
         name: {
           minlength: "Ваше имя должно быть длиннее 2 символов",
@@ -148,6 +148,7 @@ $(function () {
       },
     });
   });
+
   $(".modal__login").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -159,4 +160,6 @@ $(function () {
       },
     });
   });
+
+  new WOW().init();
 });

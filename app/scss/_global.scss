@@ -248,3 +248,15 @@ button::-moz-focus-inner {
 .tab + .tab {
     margin-left: 15px;
 }
+label.invalid {
+    display: block;
+    color: rgb(189, 11, 11);
+    font-size: 16px;
+    line-height: 18px;
+}
+label.invalid-feedback {
+    display: block;
+    color: rgb(189, 11, 11);
+    font-size: 16px;
+    line-height: 18px;
+}

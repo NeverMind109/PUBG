@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.23",
+    "jquery-validation": "^1.19.3",
     "swiper": "^8.0.2"
   }
 }
