@@ -163,7 +163,8 @@
         justify-content: center;
         position: absolute;
         padding-top: 40px;
-        height: 100vh;
+        max-height: 100vh;
+        height: auto;
         top: 110px;
         left:0;
         right:0;
@@ -176,6 +177,7 @@
         &__list {
             flex-direction: column;
             align-items: flex-start;
+            justify-content: flex-start;
         }
         &__list-item {
             align-items: flex-start;
@@ -199,6 +201,7 @@
         }
         &--active {
             transform: translateY(0);
+            overflow-y: scroll;
         }
     }
     .menu__list-item + .menu__list-item {
@@ -340,7 +343,6 @@
 }
 @media (max-width: 700px) {
     .header {
-        background: url('../images/header-mobile-bg.svg') no-repeat;
         background-position: top left -1px;
         background-size: cover;
     }

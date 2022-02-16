@@ -1,4 +1,7 @@
 .footer {
+    background: url('../images/footer-bg.svg') no-repeat;
+    background-position: bottom -139px center;
+    background-size: cover;
     &__navigation {
         font-size: 17px;
         line-height: 21px;

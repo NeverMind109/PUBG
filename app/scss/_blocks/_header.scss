@@ -1,8 +1,10 @@
 .header {
-    position: relative;
     font-size: 17px;
     line-height: 21px;
     color: #fff;
+    background: url('../images/header-bg.svg') no-repeat;
+    background-position: top left -1px;
+    background-size: cover;
 }
 .header-top {
     padding-top: 30px;
@@ -41,7 +43,7 @@
         line-height: 67px;
         &::before {
             content: '';
-            background-image: url('../../images/title-decoration.svg');
+            background-image: url('../images/title-decoration.svg');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

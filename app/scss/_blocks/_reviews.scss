@@ -16,7 +16,7 @@
         position: relative;
         &::before {
             content: '';
-            background-image: url('../../images/title-decoration.svg');
+            background-image: url('../images/title-decoration.svg');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -47,7 +47,7 @@
         border-radius: 5px;
         &::before {
             content: '';
-            background: url('../../images/reviews-quote.svg') no-repeat;
+            background: url('../images/reviews-quote.svg') no-repeat;
             background-position: center;
             background-size: contain;
             width: 58px;
@@ -59,7 +59,7 @@
         }
         &::after {
             content: '';
-            background: url('../../images/reviews-quote.svg') no-repeat;
+            background: url('../images/reviews-quote.svg') no-repeat;
             background-position: center;
             background-size: contain;
             width: 58px;
@@ -106,7 +106,7 @@
         margin-bottom: 20px;
         &::after {
             content: '';
-            background: url('../../images/reviews-name-decor.png') no-repeat;
+            background: url('../images/reviews-name-decor.png') no-repeat;
             background-size: cover;
             background-position: center;
             width: 29px;

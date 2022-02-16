@@ -54,7 +54,7 @@
         margin-bottom: 25px;
         &::before {
             content: '';
-            background: url('../../images/titles-decoration.svg') no-repeat;
+            background: url('../images/titles-decoration.svg') no-repeat;
             background-size: contain;
             background-position: center;
             width: 40px;
@@ -65,7 +65,7 @@
         }
         &::after {
             content: '';
-            background: url('../../images/titles-decoration.svg') no-repeat;
+            background: url('../images/titles-decoration.svg') no-repeat;
             background-size: contain;
             background-position: center;
             width: 40px;
@@ -91,7 +91,7 @@
         margin-bottom: 50px;
         padding-left: 23px;
         &::before {
-            content: url('../../images/list-point.svg');
+            content: url('../images/list-point.svg');
             width: 10px;
             height: 10px;
             position: absolute;
@@ -112,7 +112,7 @@
         color: #828282;
         margin-bottom: 57px;
         &::before {
-            content: url('../../images/warning-icon.svg');
+            content: url('../images/warning-icon.svg');
             width: 32px;
             height: 28px;
             position: absolute;
@@ -136,7 +136,7 @@
         color: #FFFFFF;
         font-weight: 600;
         &::after {
-            content: url('../../images/play-icon.svg');
+            content: url('../images/play-icon.svg');
             width: 33px;
             height: 33px;
             position: absolute;

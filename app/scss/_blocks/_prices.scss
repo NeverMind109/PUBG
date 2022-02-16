@@ -10,7 +10,7 @@
         position: relative;
         &::before {
             content: '';
-            background: url('../../images/titles-decoration.svg') no-repeat;
+            background: url('../images/titles-decoration.svg') no-repeat;
             background-size: contain;
             background-position: center;
             width: 40px;
@@ -21,7 +21,7 @@
         }
         &::after {
             content: '';
-            background: url('../../images/titles-decoration.svg') no-repeat;
+            background: url('../images/titles-decoration.svg') no-repeat;
             background-size: contain;
             background-position: center;
             width: 40px;
@@ -95,7 +95,7 @@
     &__rate-included {
         &::before {
             content: '';
-            background: url('../../images/yes-icon.svg') no-repeat;
+            background: url('../images/yes-icon.svg') no-repeat;
             background-size: cover;
             background-position: center;
             width: 23px;
@@ -107,7 +107,7 @@
     &__rate-excluded {
         &::before {
             content: '';
-            background: url('../../images/no-icon.svg') no-repeat;
+            background: url('../images/no-icon.svg') no-repeat;
             background-size: cover;
             background-position: center;
             width: 18px;

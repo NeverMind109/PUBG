@@ -101,7 +101,7 @@
         &::before {
             content: '';
             position: absolute;
-            background: url('../../images/modal-user.png');
+            background: url('../images/modal-user.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -200,7 +200,7 @@
     }
 }
 .modal__old-checkbox:checked + .modal__custom-checkbox::before {
-    background-image: url('../../images/check-icon.svg');
+    background-image: url('../images/check-icon.svg');
 }
 .modal__old-checkbox:not(:disabled):not(:checked) + .modal__custom-checkbox:hover::before {
     border-color: #b3d7ff;

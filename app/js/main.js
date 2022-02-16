@@ -75,14 +75,22 @@ $(function () {
 
   $(".menu-mobile").on("click", function () {
     $(".menu").toggleClass("menu--active");
+    $("body").toggleClass("overflow-hidden");
     $(".menu__list-link").on("click", function () {
       $(".menu").removeClass("menu--active");
+      $("body").removeClass("overflow-hidden");
+    });
+    $(".logo").on("click", function () {
+      $(".menu").removeClass("menu--active");
+      $("body").removeClass("overflow-hidden");
     });
   });
 
-  var openModalUser = $("[data-toggle=user-modal");
+  var openModalUser = $("[data-toggle=user-modal]");
+  var overlayClick = $(".modal__overlay");
   var closeModalUser = $(".modal__close");
   openModalUser.on("click", openModal);
+  overlayClick.on("click", closeModal);
   closeModalUser.on("click", closeModal);
 
   function openModal() {
@@ -91,6 +99,7 @@ $(function () {
     $(targetModal)
       .find(".modal__user-profile")
       .addClass("modal__user-profile--visible");
+    $("body").toggleClass("overflow-hidden");
   }
   function closeModal(event) {
     event.preventDefault();
@@ -98,6 +107,7 @@ $(function () {
     var modalDialog = $(".modal__user-profile");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__user-profile--visible");
+    $("body").removeClass("overflow-hidden");
   }
 
   $(".modal__tab").on("click", function (e) {
