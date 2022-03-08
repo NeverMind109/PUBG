@@ -67,9 +67,9 @@ $(function () {
       .stop()
       .animate(
         {
-          scrollTop: $(anchor).offset().top - 60,
+          scrollTop: $(anchor).offset().top - -20,
         },
-        800
+        500
       );
   });
 

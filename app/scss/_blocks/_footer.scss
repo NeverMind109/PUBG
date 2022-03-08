@@ -1,20 +1,20 @@
 .footer {
-    background: url('../images/footer-bg.svg') no-repeat;
-    background-position: bottom -139px center;
-    background-size: cover;
-    &__navigation {
-        font-size: 17px;
-        line-height: 21px;
-        color: #fff;
-        margin-top: 150px;
-    }
-    &__copy {
-        display: block;
-        text-align: center;
-        margin: 76px auto 0;
-        padding-bottom: 45px;
-        font-size: 17px;
-        line-height: 21px;
-        color: #FFFFFF;
-    }
+  background: url("../images/footer-bg.svg") no-repeat;
+  background-position: bottom -139px center;
+  background-size: cover;
+  &__navigation {
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 150px;
+  }
+  &__copy {
+    display: block;
+    text-align: center;
+    margin: 76px auto 0;
+    padding-bottom: 45px;
+    font-size: 17px;
+    line-height: 21px;
+    color: #ffffff;
+  }
 }

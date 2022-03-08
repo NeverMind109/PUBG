@@ -1,207 +1,215 @@
 .modal {
-    &__overlay {
-        position: fixed;
-        z-index: 100;
-        visibility: hidden;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 143, 223, 0.39);
-        opacity: 0;
-        transition: opacity 0.2s;
-        &--visible {
-            visibility: visible;
-            opacity: 1;
-        }
+  &__overlay {
+    position: fixed;
+    z-index: 100;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 143, 223, 0.39);
+    opacity: 0;
+    transition: opacity 0.2s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
     }
-    &__user-profile {
-        position: fixed;
-        z-index: 101;
-        visibility: hidden;
-        width: 600px;
-        min-height: 650px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        background-color: #fff;
-        color: #000;
-        padding: 50px 75px;
-        border-radius: 5px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s;
-        &--visible {
-            visibility: visible;
-            opacity: 1;
-        }
+  }
+  &__user-profile {
+    position: fixed;
+    z-index: 101;
+    visibility: hidden;
+    width: 600px;
+    min-height: 650px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #fff;
+    color: #000;
+    padding: 50px 75px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
     }
-    &__close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        opacity: .3;
-        width: 30px;
-        height: 30px;
-        &:hover {
-            opacity: 1;
-        }
-        &::before {
-            position: absolute;
-            content: '';
-            height: 30px;
-            width: 2px;
-            background-color: #000;
-            left: 15px;
-            transform: rotate(45deg);
-        }
-        &::after {
-            position: absolute;
-            content: '';
-            height: 30px;
-            width: 2px;
-            background-color: #000;
-            left: 15px;
-            transform: rotate(-45deg);
-        }
+  }
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.3;
+    width: 30px;
+    height: 30px;
+    &:hover {
+      opacity: 1;
     }
-    &__tabs {
-        margin-bottom: 40px;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 30px;
+      width: 2px;
+      background-color: #000;
+      left: 15px;
+      transform: rotate(45deg);
     }
-    &__tab {
-        display: inline-block;
-        margin-right: 10px;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 28px;
-        &--active {
-            text-decoration: underline;
-        }
+    &::after {
+      position: absolute;
+      content: "";
+      height: 30px;
+      width: 2px;
+      background-color: #000;
+      left: 15px;
+      transform: rotate(-45deg);
     }
-    &__tab-content {
-        display: none;
-        flex-wrap: wrap;
-        &--active {
-            display: flex;
-        }
+  }
+  &__tabs {
+    margin-bottom: 40px;
+  }
+  &__tab {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    &--active {
+      text-decoration: underline;
     }
-    &__tab-text {
-        position: relative;
-        display: block;
-        width: 100%;
-        margin: 0 0 10px;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 25px;
-        padding-left: 45px;
-        &::before {
-            content: '';
-            position: absolute;
-            background: url('../images/modal-user.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            top: -10px;
-            left: 0;
-        }
+  }
+  &__tab-content {
+    display: none;
+    flex-wrap: wrap;
+    &--active {
+      display: flex;
     }
-    &__form {
-        padding: 20px 0 20px;
+  }
+  &__tab-text {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    padding-left: 45px;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../images/modal-user.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      top: -10px;
+      left: 0;
     }
-    &__input {
-        width: 100%;
-        height: 55px;
-        border: 1px solid #000;
-        border-radius: 6px;
-        padding: 15px 10px 15px;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 25px;
-        margin: 15px 0;
-        &::placeholder {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 22px;
-            line-height: 24px;
-            color: rgba(46, 58, 89, 0.43);
-        }
+  }
+  &__form {
+    padding: 20px 0 20px;
+  }
+  &__input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 15px 10px 15px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 15px 0;
+    &::placeholder {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 24px;
+      color: rgba(46, 58, 89, 0.43);
     }
-    &__old-checkbox {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-        margin-top: 20px;
+  }
+  &__old-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin-top: 20px;
+  }
+  &__custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-top: 20px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: transparent;
+      background-position: center;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #000;
+      border-radius: 25%;
     }
-    &__custom-checkbox {
-        display: inline-flex;
-        align-items: center;
-        user-select: none;
-        margin-top: 20px;
-        cursor: pointer;
-        &::before {
-            content: '';
-            display: inline-block;
-            background-color: transparent;
-            background-position: center;
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-            flex-shrink: 0;
-            flex-grow: 0;
-            border: 1px solid #000;
-            border-radius: 25%;
-        }
+  }
+  &__check-text {
+    display: inline;
+    padding-left: 7px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    display: inline-block;
+    border: 1px solid orange;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 15px 25px;
+    margin: 30px 0 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background: linear-gradient(
+      98.89deg,
+      rgb(255, 155, 5) 25.06%,
+      rgb(255, 143, 63) 88.94%
+    );
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #000;
     }
-    &__check-text {
-        display: inline;
-        padding-left: 7px;
-    }
-    &__buttons {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__button {
-        display: inline-block;
-        border: 1px solid orange;
-        color: #fff;
-        background-color: transparent;
-        border-radius: 6px;
-        padding: 15px 25px;
-        margin: 30px 0 0;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        background: linear-gradient(98.89deg, rgb(255, 155, 5) 25.06%, rgb(255, 143, 63) 88.94%);
-        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
-        cursor: pointer;
-        &:hover {
-            border: 1px solid #000;
-        }
-    }
-    &__register-btn {
-        display: block;
-    }
-    &__link {
-        display: inline-block;
-        text-decoration: underline;
-        align-self: center;
-        color: #0aa6fe;
-        margin: 30px 0 0;
-    }
+  }
+  &__register-btn {
+    display: block;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: underline;
+    align-self: center;
+    color: #0aa6fe;
+    margin: 30px 0 0;
+  }
 }
 .modal__old-checkbox:checked + .modal__custom-checkbox::before {
-    background-image: url('../images/check-icon.svg');
+  background-image: url("../images/check-icon.svg");
 }
-.modal__old-checkbox:not(:disabled):not(:checked) + .modal__custom-checkbox:hover::before {
-    border-color: #b3d7ff;
+.modal__old-checkbox:not(:disabled):not(:checked)
+  + .modal__custom-checkbox:hover::before {
+  border-color: #b3d7ff;
+}
+#checkbox-error {
+  padding: 20px 0 0;
 }

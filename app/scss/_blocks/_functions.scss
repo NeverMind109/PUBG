@@ -1,210 +1,211 @@
 .functions {
-    padding-top: 33px;
-    background-color: #F5F9FF;
-    &__wrapper {
-        display: flex;
+  padding-top: 33px;
+  background-color: #f5f9ff;
+  &__wrapper {
+    display: flex;
+  }
+  &__navigation {
+    margin: 0 90px 0 28px;
+    max-width: 567px;
+  }
+  &__tabs {
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__slider {
+    position: relative;
+    max-width: 100%;
+    max-height: 680px;
+  }
+  &__slide {
+    text-align: center;
+  }
+  &__slider-image {
+    object-fit: cover;
+    width: 300px;
+    height: 583px;
+  }
+  &__slider-text {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 25px;
+  }
+  &__content {
+    display: none;
+    &--active {
+      display: block;
     }
-    &__navigation {
-        margin: 0 90px 0 28px;
-        max-width: 567px;
+  }
+  &__heading {
+    display: none;
+  }
+  &__info {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__description {
+    display: none;
+  }
+  &__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    &::before {
+      content: "";
+      background: url("../images/titles-decoration.svg") no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -8px;
+      left: -27px;
     }
-    &__tabs {
-        justify-content: space-between;
-        margin-bottom: 40px;
+    &::after {
+      content: "";
+      background: url("../images/titles-decoration.svg") no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: -11px;
+      right: -34px;
     }
-    &__slider {
-        position: relative;
-        max-width: 100%;
-        max-height: 680px;
+  }
+  &__text {
+    max-width: 495px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 60px;
+  }
+  &__list {
+    margin-bottom: 20px;
+  }
+  &__item {
+    position: relative;
+    text-align: justify;
+    color: #2e3a59;
+    margin-bottom: 50px;
+    padding-left: 23px;
+    &::before {
+      content: url("../images/list-point.svg");
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      top: 2px;
     }
-    &__slide {
-        text-align: center;
+  }
+  &__item-bold {
+    font-weight: bold;
+  }
+  &__recommendation {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    text-align: center;
+    padding: 33px 52px 32px 77px;
+    color: #828282;
+    margin-bottom: 57px;
+    &::before {
+      content: url("../images/warning-icon.svg");
+      width: 32px;
+      height: 28px;
+      position: absolute;
+      left: 26px;
+      top: 30px;
     }
-    &__slider-image {
-        object-fit: cover;
-        width: 300px;
-        height: 583px;
+  }
+  &__buttons {
+    margin-bottom: 50px;
+  }
+  &__buy {
+    padding: 28px 96px 28px 34px;
+    margin-right: 23px;
+  }
+  &__watch {
+    display: inline-block;
+    position: relative;
+    padding: 28px 80px 28px 28px;
+    background: #ff3b3b;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    &::after {
+      content: url("../images/play-icon.svg");
+      width: 33px;
+      height: 33px;
+      position: absolute;
+      top: 22px;
+      right: 23px;
     }
-    &__slider-text {
-        display: block;
-        margin-bottom: 10px;
-        padding-left: 25px;
+    &:hover {
+      box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.5);
     }
-    &__content {
-        display: none;
-        &--active {
-            display: block;
-        }
-    }
-    &__heading {
-        display: none;
-    }
-    &__info {
-        max-width: 650px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__description {
-        display: none;
-    }
-    &__title {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 25px;
-        &::before {
-            content: '';
-            background: url('../images/titles-decoration.svg') no-repeat;
-            background-size: contain;
-            background-position: center;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            top: -8px;
-            left: -27px;
-        }
-        &::after {
-            content: '';
-            background: url('../images/titles-decoration.svg') no-repeat;
-            background-size: contain;
-            background-position: center;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            bottom: -11px;
-            right: -34px;
-        }
-    }
-    &__text {
-        max-width: 495px;
-        text-align: center;
-        color: #828282;
-        margin-bottom: 60px;
-    }
-    &__list {
-        margin-bottom: 20px;
-    }
-    &__item {
-        position: relative;
-        text-align: justify;
-        color: #2E3A59;
-        margin-bottom: 50px;
-        padding-left: 23px;
-        &::before {
-            content: url('../images/list-point.svg');
-            width: 10px;
-            height: 10px;
-            position: absolute;
-            left: 0;
-            top: 2px;
-        }
-    }
-    &__item-bold {
-        font-weight: bold;
-    }
-    &__recommendation {
-        position: relative;
-        background: #FFFFFF;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.04);
-        border-radius: 5px;
-        text-align: center;
-        padding: 33px 52px 32px 77px;
-        color: #828282;
-        margin-bottom: 57px;
-        &::before {
-            content: url('../images/warning-icon.svg');
-            width: 32px;
-            height: 28px;
-            position: absolute;
-            left: 26px;
-            top: 30px;
-        }
-    }
-    &__buttons {
-        margin-bottom: 50px;
-    }
-    &__buy {
-        padding: 28px 96px 28px 34px;
-        margin-right: 23px;
-    }
-    &__watch {
-        display: inline-block;
-        position: relative;
-        padding: 28px 80px 28px 28px;
-        background: #FF3B3B;
-        border-radius: 5px;
-        color: #FFFFFF;
-        font-weight: 600;
-        &::after {
-            content: url('../images/play-icon.svg');
-            width: 33px;
-            height: 33px;
-            position: absolute;
-            top: 22px;
-            right: 23px;
-        }
-        &:hover {
-            box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.5);
-        }
-    }
+  }
 }
 .tab-widows-icon {
-    width: 33px;
-    height: 29px;
+  width: 33px;
+  height: 29px;
 }
 .tab-android-icon {
-    width: 33px;
-    height: 39px;
+  width: 33px;
+  height: 39px;
 }
 .tab-ios-icon {
-    width: 30px;
-    height: 40px;
+  width: 30px;
+  height: 40px;
 }
 .tabs-buttons {
-    position: absolute;
-    bottom: 0;
-    width: 61px;
-    height: 32px;
-    border: none;
-    fill: #E2E2E2;
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 99;
+  position: absolute;
+  bottom: 0;
+  width: 61px;
+  height: 32px;
+  border: none;
+  fill: #e2e2e2;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99;
 }
 .tabs-prev {
-    left: 39%;
+  left: 39%;
 }
 .tabs-next {
-    right: 33%;
-    transform: rotate(180deg);
+  right: 33%;
+  transform: rotate(180deg);
 }
 .tab-1-prev {
-    &:hover {
-        fill: url('#linear-gradient-1');
-    }
+  &:hover {
+    fill: url("#linear-gradient-1");
+  }
 }
 .tab-1-next {
-    &:hover {
-        fill: url('#linear-gradient-2');
-    }
+  &:hover {
+    fill: url("#linear-gradient-2");
+  }
 }
-.tab-2-prev,.tab-2-next {
-    &:hover {
-        fill: url('#linear-gradient-3');
-    }
+.tab-2-prev,
+.tab-2-next {
+  &:hover {
+    fill: url("#linear-gradient-3");
+  }
 }
 .tab-2-next {
-    &:hover {
-        fill: url('#linear-gradient-4');
-    }
+  &:hover {
+    fill: url("#linear-gradient-4");
+  }
 }
 .tab-3-prev {
-    &:hover {
-        fill: url('#linear-gradient-5');
-    }
+  &:hover {
+    fill: url("#linear-gradient-5");
+  }
 }
 .tab-3-next {
-    &:hover {
-        fill: url('#linear-gradient-6');
-    }
+  &:hover {
+    fill: url("#linear-gradient-6");
+  }
 }
